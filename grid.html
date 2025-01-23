@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .mainDiv{
+            display: grid;
+            grid-template-columns: 5cm 20cm 5cm;
+            grid-template-rows: 5cm 20cm 5cm;
+            /* row-gap: 20px;
+            column-gap: 20px; */
+            gap: 20px;
+            width: 100%;
+            height: 100%;
+        }
+        .d1{
+            text-align: center;
+            background-color: rgb(228, 119, 119);
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            grid-column: 1/4;
+            align-content: center;
+        }
+        .d2{
+            text-align: center;
+            background-color: aqua;
+            grid-column: 1/2;
+            align-content: center;
+        }
+        .d3{
+            text-align: center;
+            background-color: beige;
+            grid-column: 2/3;
+            align-content: center;
+        }
+        .d4{
+            text-align: center;
+            background-color: rgb(162, 162, 242);
+            grid-column: 3/4;
+            align-content: center;
+        }
+        .d5{
+            text-align: center;
+            background-color: rgb(79, 205, 144);
+            grid-column: 1/4;
+            align-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainDiv">
+        <div class="d1" >header</div>
+        <div class="d2" >navigation</div>
+        <div class="d3" >main_content</div>
+        <div class="d4" >sidebar</div>
+        <div class="d5" >footer</div>
+    </div>
+</body>
+</html>
